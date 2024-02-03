@@ -4,8 +4,8 @@ const Header = () => {
 	return (
 		<div className="header">
 			<h2>
-				<span>S</span>earch
-				<span>E</span>ngine
+				<span>I</span>MAGE
+				<span>S</span>EARCH
 			</h2>
 			<div className="account-icon">
 				<RiAccountCircleFill />
