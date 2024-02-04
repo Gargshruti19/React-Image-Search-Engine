@@ -20,7 +20,7 @@ const Body = () => {
 		imageApiData();
 	};
 
-	//This function is called when media chnages for small devices load 6 images otherwise 12 images
+	//This function is called when media changes for small devices load 6 images otherwise 12 images
 	const handleMediaChange = (x) => {
 		setPerPage(x.matches ? 6 : 12);
 	};
@@ -47,7 +47,9 @@ const Body = () => {
 		try {
 			setLoading(true);
 			const data = await fetch(
-				`https://api.unsplash.com/search/photos?page=${page}&query=${keyword.trim()}&client_id=${accessKey}&per_page=${perPage}`
+				`https://api.unsplash.com/search/photos?page=${page}&query=${keyword
+					.trim()
+					.toLowerCase()}&client_id=${accessKey}&per_page=${perPage}`
 			);
 			const json = await data.json();
 			if (page === 1) {

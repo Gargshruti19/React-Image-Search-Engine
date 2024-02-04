@@ -5,7 +5,7 @@ const SearchForm = ({ handleSubmit, setKeyword, api }) => {
 		<form onSubmit={handleSubmit}>
 			<input
 				type="text"
-				placeholder="Search Images"
+				placeholder="Search Images..........."
 				onChange={(e) => setKeyword(e.target.value)}
 			/>
 			<button onClick={api} type="submit">

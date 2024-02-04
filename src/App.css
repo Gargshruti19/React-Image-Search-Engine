@@ -1,4 +1,4 @@
-/* General Styling  */
+/*..................... General Styling.............  */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -17,13 +17,14 @@ body::-webkit-scrollbar {
 	display: none;
 }
 p {
-	font-size: 3rem;
+	font-size: 2rem;
 	display: flex;
 	justify-content: center;
-	/* align-items: center; */
 	padding: 2rem;
+	padding-top: 5rem;
+	color: white;
 }
-/* Header Styling  */
+/*..................... Header Styling.........................  */
 .header {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -36,24 +37,30 @@ p {
 }
 .header h2 {
 	font-size: 2.8rem;
+	font-weight: 800;
 	background: linear-gradient(to right, blue, #ff6b08, blue, #b5a304);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
+	cursor: pointer;
 }
 .header h2 span {
 	font-size: 5rem;
+	font-weight: 600;
 }
+
+/* .........................user icon...................  */
 .account-icon {
 	font-size: 5rem;
 	color: white;
 	transition: all 0.5s;
+	cursor: pointer;
 }
 .account-icon:hover {
 	filter: drop-shadow(0 5px 7px rgba(255, 255, 255, 0.5));
 }
 
-/* Body Styling  */
+/*..................... Body Styling .............................. */
 
 .body {
 	max-width: 1280px;
@@ -68,6 +75,8 @@ p {
 	gap: 4rem;
 	justify-content: center;
 }
+
+/*....................... input box styling.........................  */
 input {
 	position: relative;
 	font-size: 18px;
@@ -93,40 +102,7 @@ input:hover {
 	color: whitesmoke;
 }
 
-.show_more_btn {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 2rem;
-}
-
-.show {
-	display: block;
-}
-.hidden {
-	display: none;
-}
-.image-result {
-	max-width: 1280px;
-	margin: 0 auto;
-}
-.image-result {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 4rem;
-	margin: 3rem;
-	margin-top: 6rem;
-}
-.image-result img {
-	height: 300px;
-	width: 350px;
-	border-radius: 2rem;
-	transition: all 0.6s;
-}
-.image-result img:hover {
-	box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
-	transform: scale(0.9);
-}
+/*........................ button styling..........................  */
 button {
 	position: relative;
 	border: none;
@@ -136,6 +112,7 @@ button {
 	border-radius: 5%;
 	padding: 10px 33px;
 	border: 3px solid transparent;
+	cursor: pointer;
 }
 button:active {
 	transform: translateY(3px);
@@ -187,8 +164,44 @@ button:hover::after {
 	transform-origin: 100px 100px;
 	transform: scale(1) translate(-10px, -70px);
 }
+
+/*..................... Show More Button Style.........................  */
 .show_more_btn {
 	display: flex;
 	justify-content: center;
 	padding-bottom: 2rem;
+}
+
+/*..................... Classes to show/hide Show more btn..................... */
+.show {
+	display: block;
+}
+.hidden {
+	display: none;
+}
+
+/*....................... div showing Images.......................  */
+.image-result {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.image-result {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 4rem;
+	margin: 3rem;
+	margin-top: 6rem;
+}
+
+/*...................... Style given to each image.........................  */
+.image-result img {
+	height: 300px;
+	width: 350px;
+	border-radius: 2rem;
+	transition: all 0.6s;
+}
+.image-result img:hover {
+	box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+	transform: scale(0.9);
 }

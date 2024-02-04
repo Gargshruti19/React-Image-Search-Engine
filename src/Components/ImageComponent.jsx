@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 // Image is an array that's why we can map over it
 const ImageComponent = ({ image }) => {
 	return (
