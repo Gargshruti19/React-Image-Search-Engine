@@ -271,8 +271,8 @@
 		gap: 4rem;
 	}
 	.image-result img {
-		height: 230px;
-		width: 270px;
+		height: 250px;
+		width: 300px;
 	}
 }
 @media (max-width: 400px) {
@@ -321,7 +321,7 @@
 		gap: 4rem;
 	}
 	.image-result img {
-		height: 200px;
-		width: 220px;
+		height: 220px;
+		width: 260px;
 	}
 }
