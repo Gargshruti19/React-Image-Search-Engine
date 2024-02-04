@@ -165,6 +165,7 @@ button:hover::after {
 	display: flex;
 	justify-content: center;
 	padding-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 /*..................... Classes to show/hide Show more btn..................... */
