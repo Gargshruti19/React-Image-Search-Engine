@@ -27,7 +27,7 @@ const Body = () => {
 
 	//This useEffect hook is used to see the change of media
 	useEffect(() => {
-		const x = window.matchMedia("(max-width: 400px)");
+		const x = window.matchMedia("(max-width: 500px)");
 		handleMediaChange(x);
 		x.addEventListener("change", handleMediaChange);
 
